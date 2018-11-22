@@ -1,0 +1,17 @@
+{
+  "presets": [
+    "react",
+    "stage-1",
+    [
+      "env",
+      { "targets": { "browsers": ["last 2 versions"] }, "modules": false }
+    ]
+  ],
+  "plugins": ["transform-decorators-legacy", "transform-class-properties"],
+  "env": {
+    "production": {
+      "presets": ["react-optimize"],
+      "plugins": ["transform-runtime"]
+    }
+  }
+}
